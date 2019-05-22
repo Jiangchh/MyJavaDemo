@@ -1,6 +1,6 @@
-package base.utils;
+package com.jch.file.util;
 
-import base.visitor.MyVisitor;
+import com.jch.file.visitor.MyVisitor;
 
 import java.io.IOException;
 import java.nio.file.*;

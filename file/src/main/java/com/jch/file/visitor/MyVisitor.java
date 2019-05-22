@@ -1,10 +1,9 @@
-package base.visitor;
+package com.jch.file.visitor;
 
-import base.utils.FilesUtils;
+import com.jch.file.util.FilesUtils;
 
 import java.io.IOException;
 import java.nio.file.FileVisitResult;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
@@ -16,7 +15,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 public class MyVisitor extends SimpleFileVisitor<Path> {
     private String target;
     private String startwith;
-    public MyVisitor(String target,String startwith){
+    public MyVisitor(String target, String startwith){
         this.target=target;
         this.startwith=startwith;
     }
